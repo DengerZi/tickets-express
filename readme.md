@@ -76,8 +76,8 @@ $ npm run start
 Podemos acceder a la aplicación con los siguientes datos:
 
 * **Perfil administrador**
-Correo electrónico: admin@mail.com
-Contraseña: soyunadmin
+  - Correo electrónico: admin@mail.com
+    Contraseña: soyunadmin
 
 * **Perfiles de usuarios**
   - Correo electrónico: user1@mail.com
