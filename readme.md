@@ -7,6 +7,7 @@
 * [Arquitectura del la aplicación](#archApp)
 * [Pasos iniciales](#initApp)
 * [Ejecutar la aplicación](#exeApp)
+* [Datos de accesos para la aplicación](#dataAccess)
 
 ## <a name="archApp"></a> Arquitectura del la aplicación 🚀
 
@@ -49,9 +50,37 @@ Para restaurar la base de datos, debemos ubicarnos en nuestro folder correspondi
 mongorestore --db=tickets_express dump/tickets_express
 ```
 
+Debe indicar un mensaje de este estilo:
+
+```sh
+2020-06-07T19:17:18.790-0400    restoring tickets_express.roles from dump\tickets_express\roles.bson
+2020-06-07T19:17:18.792-0400    no indexes to restore
+2020-06-07T19:17:18.792-0400    finished restoring tickets_express.roles (2 documents, 0 failures)
+2020-06-07T19:17:19.130-0400    restoring tickets_express.users from dump\tickets_express\users.bson
+2020-06-07T19:17:19.135-0400    restoring indexes for collection tickets_express.users from metadata
+2020-06-07T19:17:19.143-0400    restoring tickets_express.tickets from dump\tickets_express\tickets.bson
+2020-06-07T19:17:19.159-0400    no indexes to restore
+2020-06-07T19:17:19.159-0400    finished restoring tickets_express.tickets (3 documents, 0 failures)
+2020-06-07T19:17:19.184-0400    finished restoring tickets_express.users (3 documents, 0 failures)
+2020-06-07T19:17:19.184-0400    8 document(s) restored successfully. 0 document(s) failed to restore.
+```
+
 ## <a name="exeApp"></a> Ejecutar la aplicación 🤓
 Para arrancar la aplicación ejecutamos el siguiente comando:
 
 ```sh
 $ npm run start
 ```
+
+## <a name="dataAccess"></a> Datos de accesos para la aplicación 🔑
+Podemos acceder a la aplicación con los siguientes datos:
+
+* **Perfil administrador**
+Correo electrónico: admin@mail.com
+Contraseña: soyunadmin
+
+* **Perfiles de usuarios**
+  - Correo electrónico: user1@mail.com
+    Contraseña: soyunuser
+  - Correo electrónico: user2@mail.com
+    Contraseña: soyunuser
